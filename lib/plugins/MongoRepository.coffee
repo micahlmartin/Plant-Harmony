@@ -1,5 +1,5 @@
 mongodb = require 'mongodb'
-settings = require('../lib/settings')
+settings = require('../settings')
 
 mongoServer = new mongodb.Server settings.DBServer, mongodb.Connection.DEFAULT_PORT 
 dbConnection = new mongodb.Db "plant_harmony", mongoServer

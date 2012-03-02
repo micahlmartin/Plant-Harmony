@@ -1,23 +1,24 @@
 (function() {
-  var test;
+  var express, repository, server, settings;
 
-  test = require('./test');
+  express = require('express');
 
-  console.log('Done loading server');
+  settings = require('./lib/settings');
 
-  /*
-  express = require 'express'
-  
-  app = express.createServer();
-  
-  app.get '/plants/:type', (req, res) ->
-  	console.log req.params.type
-  	res.writeHead 200, "Content-Type" : "text/plain"
-  	##res.send req.params.type
-  	res.end
-  
-  app.listen process.env.VMC_APP_PORT || 3006, ->
-  	console.log 'listening'
-  */
+  repository = require('./lib/plugins/' + settings.Repository);
+
+  server = express.createServer();
+
+  server.get('/plants/types/:type', function(req, res) {
+    console.log(req);
+    res.writeHead(200, {
+      "Content-Type": "text/plain"
+    });
+    return res.end;
+  });
+
+  server.listen(process.env.VMC_APP_PORT || 3005, function() {
+    return console.log('started web server');
+  });
 
 }).call(this);

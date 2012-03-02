@@ -1,18 +1,13 @@
-test = require './test' 
-
-console.log 'Done loading server'
-
-###
 express = require 'express'
+settings = require './lib/settings'
+repository = require './lib/plugins/' + settings.Repository
 
-app = express.createServer();
+server = express.createServer();
 
-app.get '/plants/:type', (req, res) ->
-	console.log req.params.type
+server.get '/plants/types/:type', (req, res) ->
+	console.log req
 	res.writeHead 200, "Content-Type" : "text/plain"
-	##res.send req.params.type
 	res.end
 
-app.listen process.env.VMC_APP_PORT || 3006, ->
-	console.log 'listening'
-###
+server.listen process.env.VMC_APP_PORT || 3005, ->
+	console.log 'started web server'
