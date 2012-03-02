@@ -1,0 +1,50 @@
+[
+	{
+		"type": "Vegetable",
+		"name": "Alfalfa",
+		"companions": [],
+		"perennial": true,
+		"description": "Perennial that roots deeply. Fixes the soil with nitrogen, accumulates iron, magnesium, phosphorous and potassium. Withstands droughts with it's long taproot and can improve just about any soil! Alfalfa has the ability to break up hard clay soil and can even send its' roots through rocks! Now that is a tenacious plant! Alfalfa is practically pest and disease free. It needs only natural rainfall to survive."
+	},
+	
+	{
+		"type": "Vegetable",
+		"name": "Amaranth",
+		"companions": ["Corn"],
+		"perennial": false,
+		"description": "Eat the young leaves in salads."
+	},
+	
+	{
+		"type": "Herb",
+		"name": "Anise",
+		"companions": ["Coriander"],
+		"perennial": false,
+		"description": "Grown for its licorice flavored leaves and seeds. Good host for predatory wasps which prey on aphids and it is also said to repel aphids. Deters pests from brassicas by camouflaging their odor. Improves the vigor of any plants growing near it. Used in ointments to protect against bug stings and bites."
+	},
+	
+	{
+		"type": "Vegetable",
+		"name": "Asparagus",
+		"companions": 
+		[
+			"Aster flower",
+			"Dill",
+			"Coriander",
+			"Carrot",
+			"Tomatoe",
+			"Parsley",
+			"Basil",
+			"Comfrey",
+			"Marigold"
+		],
+		"foes": 
+		[
+			"Onion",
+			"Garlic",
+			"Potatoe"
+		],
+		"perennial": true,
+		"description": ""
+	}
+]
