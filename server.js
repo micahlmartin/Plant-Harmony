@@ -1,5 +1,5 @@
 (function() {
-  var express, repository, server, settings;
+  var express, repository, sendRepsonse, server, settings;
 
   express = require('express');
 
@@ -9,12 +9,34 @@
 
   server = express.createServer();
 
+  sendRepsonse = function(err, data, res) {
+    if (err != null) {
+      return res.send({
+        status: {
+          code: 500,
+          error: err
+        }
+      });
+    } else {
+      return res.send({
+        data: data,
+        status: {
+          code: 200
+        }
+      });
+    }
+  };
+
   server.get('/plants/types/:type', function(req, res) {
-    console.log(req);
-    res.writeHead(200, {
-      "Content-Type": "text/plain"
+    return repository.getByType(req.params.type, function(err, results) {
+      return sendRepsonse(err, results, res);
     });
-    return res.end;
+  });
+
+  server.get('/plants/search/:type', function(req, res) {
+    return repository.nameSearch(req.params.type, function(err, results) {
+      return sendRepsonse(err, results, res);
+    });
   });
 
   server.listen(process.env.VMC_APP_PORT || 3005, function() {
