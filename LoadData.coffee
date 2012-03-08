@@ -8,6 +8,10 @@ mongoServer = new mongodb.Server '127.0.0.1', mongodb.Connection.DEFAULT_PORT
 dbConnection = new mongodb.Db "plant_harmony", mongoServer
 dbConnection.open (err, db) -> 
 	
+	if err?
+		console.log err
+		return
+		
 	console.log 'Connection opened'
 
 	db.dropDatabase (err, result) ->

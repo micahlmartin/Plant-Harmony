@@ -47,4 +47,77 @@
 		"perennial": true,
 		"description": ""
 	},
+
+	{
+		"type": "Herb",
+		"name": "Basil",
+		"companions": ["Tomatoe", "Pepper", "Oregano", "Asparagus", "Petunia"],
+		"foes": ["Rue", "Sage"],
+		"perennial": true,
+		"description": "Basil can be helpful in repelling thrips. It is said to repel flies and mosquitoes."
+	},
+
+	{
+		"type": "Vegetable",
+		"name": "Bean",
+		"companions": ["Carrot", "Celery", "Swiss Chard", "Corn", "Eggplant", "Pea", "Potatoe", "Mustard", "Turnip", "Spinach", "Cabbage", "Rutabega", "Kohlrabi", "Kale", "Cauliflower", "Broccoli", "Brussel Sprout",	 "Beet", "Radish", "Strawberry", "Cucumber"],
+		"foes": ["Onion", "Garlic", "Leek", "Chives"],
+		"perennial": false,
+		"description": "All bean enrich the soil with nitrogen fixed form the air, improving the conditions for whatever crop you plant after the beans are finished. Beans are great for heavy nitrogen users like corn and grain plants because the nitrogren used up by the corn and grains are replaced at the end of the season when the bean plants die back. French Haricot beans, sweet corn and melons are a good combo. Summer savory deters bean beetles and improves growth and flavor. Keep beans away from the alliums. Do not allow beans to mature on the plant, or it will stop producing, and do not pick beans or cultivate when they are wet, or it will spread viral diseases."
+	},
+
+	{
+		"type": "Herb",
+		"name": "Bee Balm",
+		"companions": ["Tomatoe"],
+		"foes": [],
+		"perennial": true,
+		"description": "Bee balm flowers are brilliant additions to late-summer herb gardens and flower borders. Butterflies, hummingbirds, bees, and other nectar-seeking creatures covet the tubular flowers on the plant's rounded flower heads, and the leaves and flowers can also be made into tea. Other common names include horsemint, wild bergamot, and Oswego tea."
+	},
+	
+	{
+		"type": "Vegetable",
+		"name": "Beet",
+		"companions": ["Lettuce", "Onion", "Mustard", "Turnip", "Spinach", "Cabbage", "Kohlrabi", "Garlic", "Mint"],
+		"foes": ["Bean"],
+		"perennial": true,
+		"description": "Good for adding minerals to the soil. The leaves are composed of 25% magnesium making them a valuable addition to the compost pile if you don't care to eat them. Beets are helped by garlic and mints. Garlic improves growth and flavor. Rather than planting invasive mints around beets use your mint clippings as a mulch."
+	},
+
+	{
+		"type": "Herb",
+		"name": "Borage",
+		"companions": ["Tomatoe", "Squash", "Strawberry"],
+		"foes": [],
+		"perennial": false,
+		"description": "Companion plant for tomatoes, squash, strawberries and most plants. Deters tomato hornworms and cabbage worms. One of the best bee and wasp attracting plants. Adds trace minerals to the soil and a good addition the compost pile. The leaves contain vitamin C and are rich in calcium, potassium and mineral salts. Borage may benefit any plant it is growing next to via increasing resistance to pests and disease. It also makes a nice mulch for most plants. Borage and strawberries help each other and strawberry farmers always set a few plants in their beds to enhance the fruits flavor and yield. Plant near tomatoes to improve growth and disease resistance. After you have planned this annual once it will self seed. Borage flowers are edible."
+	},
+
+	{
+		"type": "Vegetable",
+		"name": "Broccoli",
+		"companions": ["Basil", "Bean", "Cucumber", "Dill", "Garlic", "Hyssop", "Lettuce", "Marigold", "Mint", "Nasturtium", "Onion", "Radish", "Rosemary", "Sage", "Thyme", "Tomato", "Celery", "Potatoe", "Onion", "Beet", "Water Cress"],
+		"foes": ["Grape", "Strawberry", "Mustard", "Rue"],
+		"perennial": false,
+		"description": "Pairing it with plants that need little calcium is a good combination such as nasturtiums and beets. Put the nasturtiums right under the broccoli plants. Herbs such as rosemary, dill and sage help repel pests with their distinct aromas."
+	},
+
+	{
+		"type": "Vegetable",
+		"name": "Cabbage",
+		"companions": ["Celery", "Dill", "Onion", "Potatoe", "Chamomile"],
+		"foes": ["Grape", "Strawberry", "Mustard", "Rue", "Tomatoe", "Pepper", "Eggplant", "Lettuce", "Pole Bean"],
+		"perennial": false,
+		"description": "Pairing it with plants that need little calcium is a good combination such as nasturtiums and beets. Put the nasturtiums right under the broccoli plants. Herbs such as rosemary, dill and sage help repel pests with their distinct aromas."
+	},
+
+	{
+		"type": "Herb",
+		"name": "Caraway",
+		"companions": ["Strawberry"],
+		"foes": ["Dill", "Fennel"],
+		"perennial": false,
+		"description": "Good for loosening compacted soil with it's deep roots so it's also compatible next to shallow rooted crops. Plant it with strawberries. Caraway can be tricky to establish. The flowers attract a number of beneficial insects especially the tiny parasitic wasps. Keep it away from dill and fennel."
+	},
+
 ]

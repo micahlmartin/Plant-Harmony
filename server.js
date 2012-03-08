@@ -39,8 +39,14 @@
     });
   });
 
-  server.listen(process.env.VMC_APP_PORT || 3005, function() {
-    return console.log('started web server');
+  server.get('/plants/:name', function(req, res) {
+    return repository.getByName(req.params.name, function(err, results) {
+      return sendRepsonse(err, results, res);
+    });
+  });
+
+  server.listen(settings.WebServerPort, function() {
+    return console.log('started web server on port ' + settings.WebServerPort);
   });
 
 }).call(this);

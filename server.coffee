@@ -25,6 +25,10 @@ server.get '/plants/search/:type', (req, res) ->
 	repository.nameSearch req.params.type, (err, results) ->
 		sendRepsonse err, results, res
 
+server.get '/plants/:name', (req, res) ->
+	repository.getByName req.params.name, (err, results) ->
+		sendRepsonse err, results, res
 
-server.listen process.env.VMC_APP_PORT || 3005, ->
-	console.log 'started web server'
+
+server.listen settings.WebServerPort, ->
+	console.log 'started web server on port ' + settings.WebServerPort

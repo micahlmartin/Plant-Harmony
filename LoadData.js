@@ -12,6 +12,10 @@
   dbConnection = new mongodb.Db("plant_harmony", mongoServer);
 
   dbConnection.open(function(err, db) {
+    if (err != null) {
+      console.log(err);
+      return;
+    }
     console.log('Connection opened');
     db.dropDatabase(function(err, result) {
       return console.log('Dropped database');
