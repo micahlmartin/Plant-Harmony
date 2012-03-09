@@ -1,5 +1,5 @@
 (function() {
-  var express, repository, sendRepsonse, server, settings;
+  var express, repository, sendResponse, server, settings;
 
   express = require('express');
 
@@ -9,7 +9,9 @@
 
   server = express.createServer();
 
-  sendRepsonse = function(err, data, res) {
+  server.use(express.static(__dirname + '/data'));
+
+  sendResponse = function(err, data, res) {
     if (err != null) {
       return res.send({
         status: {
@@ -29,20 +31,26 @@
 
   server.get('/plants/types/:type', function(req, res) {
     return repository.getByType(req.params.type, function(err, results) {
-      return sendRepsonse(err, results, res);
+      return sendResponse(err, results, res);
     });
   });
 
   server.get('/plants/search/:type', function(req, res) {
     return repository.nameSearch(req.params.type, function(err, results) {
-      return sendRepsonse(err, results, res);
+      return sendResponse(err, results, res);
     });
   });
 
-  server.get('/plants/:name', function(req, res) {
-    return repository.getByName(req.params.name, function(err, results) {
-      return sendRepsonse(err, results, res);
-    });
+  server.get('/plants/:name?', function(req, res) {
+    if (req.params.name != null) {
+      return repository.getByName(req.params.name, function(err, results) {
+        return sendResponse(err, results, res);
+      });
+    } else {
+      return repository.getAll(1, 10, function(err, results) {
+        return sendResponse(err, results, res);
+      });
+    }
   });
 
   server.listen(settings.WebServerPort, function() {

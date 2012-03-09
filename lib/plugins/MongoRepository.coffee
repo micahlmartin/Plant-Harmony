@@ -20,6 +20,16 @@ getCollection = (name, callback) ->
 
 
 module.exports = 
+
+	getAll: (pageNumber, pageCount, callback) ->
+		console.log 'Returning all plants ' + pageNumber + ' ' + pageCount
+
+		getCollection 'plants', (err, coll, db) ->
+			coll.find().toArray (err, docs) ->
+				db.close()
+				console.log docs
+				callback err, docs
+
 	getByType: (type, callback) ->
 		console.log 'Search for plants of type ' + type
 

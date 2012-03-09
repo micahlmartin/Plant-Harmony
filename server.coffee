@@ -4,7 +4,9 @@ repository = require './lib/plugins/' + settings.Repository
 
 server = express.createServer();
 
-sendRepsonse = (err, data, res) ->
+server.use(express.static(__dirname + '/data'));
+
+sendResponse = (err, data, res) ->
 	if err?
 		res.send
 			status:
@@ -18,16 +20,20 @@ sendRepsonse = (err, data, res) ->
 
 server.get '/plants/types/:type', (req, res) ->
 	repository.getByType req.params.type, (err, results) ->
-		sendRepsonse err, results, res
+		sendResponse err, results, res
 
 
 server.get '/plants/search/:type', (req, res) ->
 	repository.nameSearch req.params.type, (err, results) ->
-		sendRepsonse err, results, res
+		sendResponse err, results, res
 
-server.get '/plants/:name', (req, res) ->
-	repository.getByName req.params.name, (err, results) ->
-		sendRepsonse err, results, res
+server.get '/plants/:name?', (req, res) ->
+	if req.params.name?
+		repository.getByName req.params.name, (err, results) ->
+			sendResponse err, results, res
+	else
+		repository.getAll 1, 10, (err, results) ->
+			sendResponse err, results, res
 
 
 server.listen settings.WebServerPort, ->

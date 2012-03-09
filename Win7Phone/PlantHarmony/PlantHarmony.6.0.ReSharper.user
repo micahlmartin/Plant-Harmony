@@ -1,0 +1,58 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:App.xaml.cs" caret="1025" fromTop="8" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:ApiStatus.cs" caret="88" fromTop="4" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:ApiResult.cs" caret="476" fromTop="20" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:PlantRepository.cs" caret="819" fromTop="21" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml.cs" caret="1114" fromTop="20" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:Plant.cs" caret="579" fromTop="24" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml" caret="1552" fromTop="15" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml" caret="4329" fromTop="18" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml" caret="3418" fromTop="30" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml" caret="4229" fromTop="41" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:PlantRepository.cs" caret="329" fromTop="10" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:PlantRepository.cs" caret="430" fromTop="16" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:ApiResult.cs" caret="531" fromTop="20" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:ApiResult.cs" caret="364" fromTop="14" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:ApiResult.cs" caret="510" fromTop="20" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:ApiStatus.cs" caret="161" fromTop="4" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:ApiStatus.cs" caret="88" fromTop="4" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:ApiResult.cs" caret="445" fromTop="17" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:PlantRepository.cs" caret="819" fromTop="24" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml.cs" caret="1059" fromTop="20" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:PlantRepository.cs" caret="506" fromTop="12" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:PlantRepository.cs" caret="667" fromTop="18" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml.cs" caret="1315" fromTop="28" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml.cs" caret="1114" fromTop="20" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/d:Data/f:Plant.cs" caret="579" fromTop="24" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml" caret="2069" fromTop="7" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml" caret="2387" fromTop="12" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml" caret="1926" fromTop="12" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml" caret="3343" fromTop="9" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml" caret="1701" fromTop="15" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml" caret="4989" fromTop="30" />
+      <File id="5D6A4252-27BF-4FFC-ADDE-8D0DF255EB95/f:MainPage.xaml" caret="1552" fromTop="15" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>
