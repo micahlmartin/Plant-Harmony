@@ -25,8 +25,8 @@
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <StackPanel Margin="-12,0,-12,0" Orientation="Horizontal">
-                        <TextBox Margin="0" Width="345" Grid.Column="0"/>
-                        <Button Content="Search" />
+                        <TextBox x:Name="SearchBox" Margin="0" Width="345" Grid.Column="0"/>
+                        <Button Content="Search" Click="Button_Click" />
                     </StackPanel>
                     <ListBox Grid.Row="1" x:Name="ResultsListBox" Margin="0,0,-12,0">
                         <ListBox.Background>

@@ -30,14 +30,17 @@ namespace PlantHarmony
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             var repo = new PlantRepository();
-            repo.GetPlantsAsync(results =>
-                                    {
-                                        Dispatcher.BeginInvoke(() => ResultsListBox.ItemsSource = results);
-                                    });
+            repo.GetPlantsAsync(results => Dispatcher.BeginInvoke(() => ResultsListBox.ItemsSource = results));
             //if (!App.ViewModel.IsDataLoaded)
             //{
             //    App.ViewModel.LoadData();
             //}
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var repo = new PlantRepository();
+            repo.SearchPlantsAsync(SearchBox.Text, results => Dispatcher.BeginInvoke(() => ResultsListBox.ItemsSource = results));
         }
     }
 }

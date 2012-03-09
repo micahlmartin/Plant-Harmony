@@ -28,5 +28,11 @@ namespace PlantHarmony.Data
             var request = new RestRequest("plants");
             _client.ExecuteAsync<ApiResult<List<Plant>>>(request, resp => callback(resp.Data.data));
         }
+
+        public void SearchPlantsAsync(string searchTerm, Action<List<Plant>> callback)
+        {
+            var request = new RestRequest("plants/search/" + (searchTerm + ""));
+            _client.ExecuteAsync<ApiResult<List<Plant>>>(request, resp => callback(resp.Data.data));
+        }
     }
 }
