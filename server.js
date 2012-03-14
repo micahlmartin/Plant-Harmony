@@ -1,11 +1,15 @@
 (function() {
-  var NotFound, express, repository, sendResponse, server, settings;
+  var NotFound, express, less, repository, sendResponse, server, settings;
 
   express = require('express');
 
   settings = require('./lib/settings');
 
   repository = require('./lib/plugins/' + settings.Repository);
+
+  less = require('less');
+
+  console.log(less.middleware);
 
   /*
   Setup sever
@@ -14,6 +18,13 @@
   server = express.createServer();
 
   server.set('view engine', 'jade');
+
+  server.set('views', __dirname + '/views');
+
+  server.use(express.compiler({
+    src: __dirname + '/data',
+    enable: ['less']
+  }));
 
   server.use(express.static(__dirname + '/data'));
 

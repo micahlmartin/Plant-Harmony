@@ -1,0 +1,13 @@
+.plant-list .plant-item {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.plant-list .plant-item img {
+  float: left;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 20px;
+}
+.plant-list .plant-item div {
+  margin-top: 13px;
+}

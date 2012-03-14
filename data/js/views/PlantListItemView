@@ -1,3 +1,0 @@
-var PlantListItemView = view.extend({
-	
-});

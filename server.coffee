@@ -1,14 +1,16 @@
 express = require 'express'
 settings = require './lib/settings'
 repository = require './lib/plugins/' + settings.Repository
-
+less = require 'less'
 
 ###
 Setup sever
 ###
 
+
 server = express.createServer()
 server.set 'view engine', 'jade'
+server.set 'views', __dirname + '/views'
 server.use express.static(__dirname + '/data')
 server.use express.logger()
 server.use express.bodyParser()
