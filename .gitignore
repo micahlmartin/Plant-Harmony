@@ -4,3 +4,4 @@ Bin/
 *.suo
 *.pdb
 *.user
+node_modules/
