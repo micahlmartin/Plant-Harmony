@@ -1,8 +1,12 @@
 .plant-list {
 
-	.plant-item { overflow: hidden; margin-bottom:15px;
+	.plant-item { overflow: hidden; margin-bottom:15px; cursor: pointer;
+		a {
+			&:hover { text-decoration:none; }
+			h3 { color:black; }
+			p { color:#999; }
+		}
 		img { float:left; vertical-align: middle; display: inline-block; margin-right:20px; }
 		div { margin-top: 13px; }
-
 	}	
 }

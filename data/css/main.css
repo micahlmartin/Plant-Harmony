@@ -1,6 +1,16 @@
 .plant-list .plant-item {
   overflow: hidden;
   margin-bottom: 15px;
+  cursor: pointer;
+}
+.plant-list .plant-item a:hover {
+  text-decoration: none;
+}
+.plant-list .plant-item a h3 {
+  color: black;
+}
+.plant-list .plant-item a p {
+  color: #999;
 }
 .plant-list .plant-item img {
   float: left;

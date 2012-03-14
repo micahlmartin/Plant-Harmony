@@ -17,16 +17,17 @@ html(lang="en")
 		div.container	
 			form.search
 				input.search-query(type="search", placeholder="Search")
-				
+
 			ul.unstyled.plant-list
 
 	script#plant-list-item-tmpl(type="text/x-jquery-tmpl")
 		li 
 			div.plant-item
-				img.thumbnail(src="/images/plants/thumbs/${image}")
-				div
-					h3 ${name}
-					p ${type}
+				a(href="#${name}")
+					img.thumbnail(src="/images/plants/thumbs/${image}")
+					div
+						h3 ${name}
+						p ${type}
 
 
 	script(type="text/javascript", src="/js/jquery-1.7.1.min.js")
