@@ -1,0 +1,79 @@
+doctype 5
+html(lang="en")
+	head
+		title=pageTitle
+		link(rel="stylesheet", href="/css/bootstrap.min.css")
+		link(rel="stylesheet", href="/css/bootstrap-responsive.min.css")
+
+	body
+		//
+			div.navbar.navbar-fixed-top(data-toggle="collapse", data-target=".nav-collapse")
+				div.navbar-inner
+					div.container
+						a.btn.btn-navbar
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a.brand Plant Harmony
+						div.nav-collapse
+							ul.nav
+								li.active
+									a(href="#") Home
+								li
+									a(href="#about") About
+								li 
+									a(href="#contact") Contact
+							form.navbar-search.pull-left
+								input.search-query.span2(type="search", placeholder="Search...")
+
+		div.page-header 
+			H1 Plant Harmony 
+				small a companion planting guide
+		
+		div.row-fluid
+			div.span12
+				ul.unstyled
+					li 
+						div.plant-item(style="overflow:hidden")
+							img.thumbnail(src="/images/alfalfa_thumb.jpg", style="vertical-align:middle;display:inline-block")
+							h3(style="display:inline-block") Alfalfa
+								small &nbsp;- Vegetable
+					li 
+						div.plant-item(style="overflow:hidden")
+							img.thumbnail(src="/images/amaranth_thumb.jpg", style="vertical-align:middle;display:inline-block")
+							h3(style="display:inline-block") Amaranth
+								small &nbsp;- Vegetable
+					li 
+						div.plant-item(style="overflow:hidden")
+							img.thumbnail(src="/images/alfalfa_thumb.jpg", style="vertical-align:middle;display:inline-block")
+							h3(style="display:inline-block") Alfalfa
+								small &nbsp;- Vegetable
+					li 
+						div.plant-item(style="overflow:hidden")
+							img.thumbnail(src="/images/anise_thumb.jpg", style="vertical-align:middle;display:inline-block")
+							h3(style="display:inline-block") Anise
+								small &nbsp;- Herb
+					li 
+						div.plant-item(style="overflow:hidden")
+							img.thumbnail(src="/images/asparagus_thumb.jpg", style="vertical-align:middle;display:inline-block")
+							h3(style="display:inline-block") Asparagus
+								small &nbsp;- Vegetable
+					li 
+						div.plant-item(style="overflow:hidden")
+							img.thumbnail(src="/images/basil_thumb.jpg", style="vertical-align:middle;display:inline-block")
+							h3(style="display:inline-block") Basil
+								small &nbsp;- Herb
+					li 
+						div.plant-item(style="overflow:hidden")
+							img.thumbnail(src="/images/bean_thumb.jpg", style="vertical-align:middle;display:inline-block")
+							h3(style="display:inline-block") Green Beans
+								small &nbsp;- Vegetable
+
+
+	script(type="text/javascript", src="/js/jquery-1.7.1.min.js")
+	script(type="text/javascript", src="/js/bootstrap.js")
+	script(type="text/javscript", src="/js/underscore-min.js")
+	script(type="text/javscript", src="/js/backbone-min.js")
+	script(type="text/javascipt", src="/js/views/plantlistitemview.js")
+
+
