@@ -1,23 +1,33 @@
-.plant-list .plant-item {
+.plant-item {
   overflow: hidden;
   margin-bottom: 15px;
   cursor: pointer;
 }
-.plant-list .plant-item a:hover {
+.plant-item a:hover {
   text-decoration: none;
 }
-.plant-list .plant-item a h3 {
+.plant-item a h3 {
   color: black;
 }
-.plant-list .plant-item a p {
-  color: #999;
+.plant-item a p {
+  color: #999999;
 }
-.plant-list .plant-item img {
+.plant-item img {
   float: left;
   vertical-align: middle;
   display: inline-block;
   margin-right: 20px;
 }
-.plant-list .plant-item div {
+.plant-item div {
   margin-top: 13px;
+}
+.details img {
+  height: 150px;
+  margin-bottom: 15px;
+}
+.details .subtitle {
+  color: #999999;
+}
+.hide {
+  display: none;
 }

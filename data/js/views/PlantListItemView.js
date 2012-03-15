@@ -9,17 +9,9 @@ var PlantListItemView = Backbone.View.extend({
 
     },
 
-    events: {
-    	"click" : "showDetails"
-    },
-
-    showDetails: function() {
-		console.log('clicked');
-    },
-
 	render: function() {
 		var html = $.tmpl('plant-list-item', this.model.attributes);
-		this.el = html;
+		$(this.el).html(html);
 		return this;
 	}
 

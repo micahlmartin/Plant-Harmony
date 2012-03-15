@@ -21,9 +21,12 @@ Define Routes
 ###
 
 server.get '/', (req, res) ->
-		console.log 'Index page'
-		res.render 'index', pageTitle: 'Test', youAreUsingJade: true, layout: false
+	repository.getAll 1, 10, (err, results) ->
+		res.render 'index', plants: results, layout: false
 
+server.get '/plants/:name', (req, res) ->
+	repository.getByName req.params.name, (err, result) ->
+		res.render 'plant', plant: result, layout: false
 
 server.get '/api/plants/types/:type', (req, res) ->
 	repository.getByType req.params.type, (err, results) ->

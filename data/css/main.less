@@ -1,12 +1,18 @@
-.plant-list {
+@lighter-text: #999;
 
-	.plant-item { overflow: hidden; margin-bottom:15px; cursor: pointer;
-		a {
-			&:hover { text-decoration:none; }
-			h3 { color:black; }
-			p { color:#999; }
-		}
-		img { float:left; vertical-align: middle; display: inline-block; margin-right:20px; }
-		div { margin-top: 13px; }
-	}	
+.plant-item { overflow: hidden; margin-bottom:15px; cursor: pointer;
+	a {
+		&:hover { text-decoration:none; }
+		h3 { color:black; }
+		p { color:@lighter-text; }
+	}
+	img { float:left; vertical-align: middle; display: inline-block; margin-right:20px; }
+	div { margin-top: 13px; }
+}	
+
+.details {
+	img { height:150px; margin-bottom:15px; }
+	.subtitle { color: @lighter-text; }
 }
+
+.hide { display: none; }

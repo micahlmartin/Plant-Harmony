@@ -12,6 +12,8 @@ var PlantCollectionView = Backbone.View.extend({
 		_.each(this.model.models, function(element) { 
 			$el.append(new PlantListItemView({model: element}).render().el);
 		});
+		this.delegateEvents();
+		return this;
 	}
 
 });

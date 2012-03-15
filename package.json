@@ -1,0 +1,18 @@
+{
+	"name": "plant-harmony",
+	"version": "0.0.1",
+	"author": "Micah Martin <micahlmartin@gmail.com>",
+	"description": "a companion planting guide",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/micahlmartin/Plant-Harmony"
+	},
+	"keywords": ["example"],
+	"dependencies": {
+		"coffee-script": "*",
+		"express": "*",
+		"less": "*",
+		"mongodb": "*",
+		"jade": "*"
+	}
+}
