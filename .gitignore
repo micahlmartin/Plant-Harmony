@@ -5,3 +5,4 @@ Bin/
 *.pdb
 *.user
 node_modules/
+*resharper*
