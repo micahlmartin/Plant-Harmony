@@ -1,0 +1,14 @@
+[
+	{
+		"name": "Allium",
+		"plants": ["Onion", "Leek", "Garlic", "Shallot", "Chive"],
+		"type": "Vegetable",
+		"companions": ["@Nightshade", "@Brassica", "Carrot"],
+		"foes": ["Bean", "Pea", "Parsley"]
+	},
+
+	{
+		"name": "Brassica",
+		"plants": ["Mustard Greens", "Cabbage", "Rapeseed", "Canola", "Rutabega", "Kale", "Broccoli", "Cauliflower", "Brussel Sprout", "Kohlrabi", "Turnip"]
+	}
+]

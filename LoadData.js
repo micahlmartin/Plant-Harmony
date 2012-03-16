@@ -1,33 +1,59 @@
 (function() {
-  var data, dbConnection, fs, mongoServer, mongodb;
+  var fs, genusData, mongodb, plantData, plantList, _;
 
   mongodb = require('mongodb');
 
   fs = require('fs');
 
-  data = eval(fs.readFileSync('data/plants.json').toString());
+  _ = require('underscore');
 
-  mongoServer = new mongodb.Server('127.0.0.1', mongodb.Connection.DEFAULT_PORT);
+  plantData = eval(fs.readFileSync('data/plants.json').toString());
 
-  dbConnection = new mongodb.Db("plant_harmony", mongoServer);
+  genusData = eval(fs.readFileSync('data/genus.json').toString());
 
-  dbConnection.open(function(err, db) {
-    if (err != null) {
-      console.log(err);
-      return;
-    }
-    console.log('Connection opened');
-    db.dropDatabase(function(err, result) {
-      return console.log('Dropped database');
-    });
-    db.collection('plants', function(err, coll) {
-      return coll.insert(data);
-    });
-    return db.close();
+  plantList = [];
+
+  _.each(plantData, function(plant) {
+    return plantList[plant.name] = plant;
   });
 
-  dbConnection.on('close', function() {
-    return console.log('Connection closed');
+  _.each(genusData, function(genus) {
+    return _.each(genus.plants, function(plantName) {
+      var currentPlant;
+      currentPlant = plantList[plantName];
+      if (currentPlant != null) {
+        return plantList[plantName] = {
+          type: genus.type,
+          genus: genus.name,
+          companions: genus.companions,
+          foes: genus.foes
+        };
+      }
+    });
   });
+
+  console.log(plantList);
+
+  /*
+  mongoServer = new mongodb.Server '127.0.0.1', mongodb.Connection.DEFAULT_PORT
+  dbConnection = new mongodb.Db "plant_harmony", mongoServer
+  dbConnection.open (err, db) -> 
+  	
+  	if err?
+  		console.log err
+  		return
+  		
+  	console.log 'Connection opened'
+  
+  	db.dropDatabase (err, result) ->
+  		console.log 'Dropped database'
+  	db.collection 'plants', (err, coll) ->
+  		coll.insert plants
+  	
+  	db.close()
+  
+  dbConnection.on 'close', ->
+  	console.log 'Connection closed'
+  */
 
 }).call(this);

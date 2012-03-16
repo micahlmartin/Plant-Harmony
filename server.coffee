@@ -1,7 +1,6 @@
 express = require 'express'
 settings = require './lib/settings'
 repository = require './lib/plugins/' + settings.Repository
-less = require 'less'
 
 ###
 Setup sever

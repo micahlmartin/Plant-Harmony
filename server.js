@@ -1,13 +1,11 @@
 (function() {
-  var NotFound, express, less, repository, sendResponse, server, settings;
+  var NotFound, express, repository, sendResponse, server, settings;
 
   express = require('express');
 
   settings = require('./lib/settings');
 
   repository = require('./lib/plugins/' + settings.Repository);
-
-  less = require('less');
 
   /*
   Setup sever
