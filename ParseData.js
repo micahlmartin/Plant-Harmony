@@ -1,9 +1,11 @@
 (function() {
-  var fs, genus, genusData, genusList, getExpandedPlants, plant, plantData, plantList, _, _i, _j, _len, _len2;
+  var fs, genus, genusData, genusList, getExpandedPlants, mongo, plant, plantArray, plantData, plantList, plants, _, _i, _j, _len, _len2;
 
   fs = require('fs');
 
   _ = require('underscore');
+
+  mongo = require('./lib/plugins/MongoRepository');
 
   plantData = eval(fs.readFileSync('data/plants.json').toString());
 
@@ -49,26 +51,35 @@
     return plant.foes = getExpandedPlants(plant.foes);
   });
 
-  /*	
-  		_.each genus.companions, (companionIndex) ->
-  			console.log companionIndex
-  			companion = genus.companions[companionIndex]
-  			if companion.match /@.+/ 
-  				 ##The companion plant is a genus name so expand it
-  			    companionList =	companionList.concat genusList[companion.substring 1].plants
-  			else
-  				companionList.push companion
-  
-  			genus.companions = companionList
-  
-  	foeList = []
-  	_.each plant.foes, (foe) ->
-  	if foe.match /@.+/
-  		foeList = foeList.concat genusList[foe.substring 1].plants
-  	else
-  		foeList.push foe
-  
-  	genus.foes = foeList
-  */
+  plantArray = [];
+
+  _.each(plantList, function(plant) {
+    return plantArray.push(plant);
+  });
+
+  plants = [];
+
+  _.each(plantList, function(plant) {
+    return plants.push(plant);
+  });
+
+  mongo.openDB(function(db) {
+    return db.dropDatabase(function(err, success) {
+      console.log("Dropped database");
+      return db.collection('plants', function(err, collection) {
+        console.log("Recreating plant collection");
+        return collection.insert(plantArray, function(err, docs) {
+          return collection.count(function(err, count) {
+            db.close();
+            if (count === plantArray.length) {
+              return console.log("Inserted " + count + " plants");
+            } else {
+              throw "Insert failed. Expected " + plantArray.length + " but was " + count;
+            }
+          });
+        });
+      });
+    });
+  });
 
 }).call(this);

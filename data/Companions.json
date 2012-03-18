@@ -1,8 +1,0 @@
-[
-	{
-		"types": ["Onions", "Garlic", "Leeks", "Shallots", "Chives"],
-		"companions": ["Tomatoes", "Peppers", "Potatoes", "Carrots", "Cabbage", "Broccoli", "Kohlrabi"],
-		"foes": ["Beans", "Peas", "Parsley"],
-		"repels": ["Slugs", "Aphids", "Cabbage Worms"]
-	}
-]

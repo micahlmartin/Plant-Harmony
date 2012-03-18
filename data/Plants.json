@@ -17,5 +17,15 @@
 		"annual": false,
 		"description": "",
 		"image": "bean.jpg"
+	},
+
+	{
+		"type": "Vegetable",
+		"name": "Leek",
+		"companions": ["Celery", "Apple", "Carrot"],
+		"foes": ["Bean", "Pea", "Swiss Chard"],
+		"annual": false,
+		"description": "",
+		"image": ""	
 	}
 ]

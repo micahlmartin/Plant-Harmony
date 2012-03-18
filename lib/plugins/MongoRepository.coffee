@@ -21,6 +21,10 @@ getCollection = (name, callback) ->
 
 module.exports = 
 
+	openDB: openDB
+
+	getCollection: getCollection
+
 	getAll: (pageNumber, pageCount, callback) ->
 		console.log 'Returning all plants ' + pageNumber + ' ' + pageCount
 

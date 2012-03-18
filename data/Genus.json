@@ -9,11 +9,13 @@
 
 	{
 		"name": "Brassica",
-		"plants": ["Mustard Greens", "Cabbage", "Rapeseed", "Canola", "Rutabega", "Kale", "Broccoli", "Cauliflower", "Brussel Sprout", "Kohlrabi", "Turnip"]
+		"plants": ["Mustard Greens", "Cabbage", "Rapeseed", "Canola", "Rutabega", "Kale", "Broccoli", "Cauliflower", "Brussel Sprout", "Kohlrabi", "Turnip"],
+		"type": "Vegetable"
 	},
 
 	{
 		"name": "Nightshade",
-		"plants": ["Sweet Pepper", "Hot Pepper"]
+		"plants": ["Sweet Pepper", "Hot Pepper"],
+		"type": "Vegetable"
 	}
 ]

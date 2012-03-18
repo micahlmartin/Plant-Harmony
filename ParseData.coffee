@@ -1,8 +1,8 @@
 fs = require 'fs'
 _ = require 'underscore'
+mongo = require './lib/plugins/MongoRepository'
 plantData = eval fs.readFileSync('data/plants.json').toString()
 genusData = eval fs.readFileSync('data/genus.json').toString()
-
 
 getExpandedPlants = (plantList) ->
 	expandedList = [];
@@ -34,4 +34,25 @@ _.each plantList, (plant) ->
 	plant.companions = getExpandedPlants(plant.companions)
 	plant.foes = getExpandedPlants(plant.foes)
 
-	
+plantArray = []
+
+_.each plantList, (plant) ->
+	plantArray.push plant
+
+plants = []
+_.each plantList, (plant) ->
+	plants.push plant
+		
+mongo.openDB (db) ->
+	db.dropDatabase (err, success) ->
+		console.log "Dropped database" 
+
+		db.collection 'plants', (err, collection) ->
+			console.log "Recreating plant collection"
+			collection.insert plantArray, (err, docs) ->
+				collection.count (err, count) ->
+					db.close() 
+					if count == plantArray.length
+						console.log "Inserted " + count + " plants"
+					else
+						throw "Insert failed. Expected " + plantArray.length + " but was " + count
