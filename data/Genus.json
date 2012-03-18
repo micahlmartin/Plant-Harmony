@@ -10,5 +10,10 @@
 	{
 		"name": "Brassica",
 		"plants": ["Mustard Greens", "Cabbage", "Rapeseed", "Canola", "Rutabega", "Kale", "Broccoli", "Cauliflower", "Brussel Sprout", "Kohlrabi", "Turnip"]
+	},
+
+	{
+		"name": "Nightshade",
+		"plants": ["Sweet Pepper", "Hot Pepper"]
 	}
 ]
