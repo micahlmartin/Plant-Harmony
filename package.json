@@ -13,6 +13,7 @@
 		"express": "*",
 		"less": "*",
 		"mongodb": "*",
-		"jade": "*"
+		"jade": "*",
+		"underscore": "*"
 	}
 }
