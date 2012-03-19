@@ -4,18 +4,38 @@
 		"plants": ["Onion", "Leek", "Garlic", "Shallot", "Chive"],
 		"type": "Vegetable",
 		"companions": ["@Nightshade", "@Brassica", "Carrot"],
-		"foes": ["Bean", "Pea", "Parsley"]
+		"foes": ["@Legume", "Parsley"]
 	},
 
 	{
 		"name": "Brassica",
-		"plants": ["Mustard Greens", "Cabbage", "Rapeseed", "Canola", "Rutabega", "Kale", "Broccoli", "Cauliflower", "Brussel Sprout", "Kohlrabi", "Turnip"],
+		"plants": ["Mustard Greens", "Mustard", "Cabbage", "Rapeseed", "Canola", "Rutabega", "Kale", "Broccoli", "Cauliflower", "Brussel Sprout", "Kohlrabi", "Turnip"],
 		"type": "Vegetable"
 	},
 
 	{
 		"name": "Nightshade",
-		"plants": ["Sweet Pepper", "Hot Pepper"],
+		"plants": ["Peppers", "Tomato", "Potato", "Eggplant"],
+		"companions": ["Carrot", "@Allium", "@Mint"],
+		"foes": ["Green Bean", "Black Walnut", "Corn", "Fennel", "Dill", "@Brassica"],
 		"type": "Vegetable"
+	},
+
+	{
+		"name": "Legume",
+		"plants": ["Green Bean", "Pea", "Lentil"],
+		"type": "Vegetable"
+	},
+
+	{
+		"name": "Cucurbitaceae",
+		"plants": ["Squash", "Pumpkin", "Zucchini", "Gourd", "Watermelon", "Cantaloupe", "Honey Dew", "Cucumber"],
+		"type": "Vegetable"
+	},
+
+	{
+		"name": "Mint",
+		"plants": ["Basil", "Mint", "Rosemary", "Sage", "Summer Savory", "Winter Savory", "Marjoram", "Oregano", "Thyme", "Lavender"],
+		"type": "Herb"
 	}
 ]

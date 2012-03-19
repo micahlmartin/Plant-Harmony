@@ -22,7 +22,7 @@ html(lang="en")
 					input.search-query(type="search", placeholder="Search")
 
 				div.details
-					img.thumbnail(src="/images/plants/#{plant.image}")
+					img.thumbnail(src="/images/plants/#{plant.name}.jpg")
 					
 					h2 #{plant.name}
 					p.subtitle #{plant.type}
@@ -34,7 +34,10 @@ html(lang="en")
 						ul.unstyled
 							each companion in plant.companions
 								li 
-									a(href="/plants/#{companion}") #{companion}
+									if companion.match(/\$.+/)
+										#{companion.substring(1)}
+									else
+										a(href="/plants/#{companion}") #{companion}
 					else
 						p.subtitle None
 
@@ -43,10 +46,34 @@ html(lang="en")
 						ul.unstyled
 							each foe in plant.foes
 								li 
-									a(href="/plants/#{foe}") #{foe}
+									if foe.match(/\$.+/)
+										#{foe.substring(1)}
+									else
+										a(href="/plants/#{foe}") #{foe}
 					else
 						p.subtitle none
 
 
-	//script(type="text/javascript", src="/js/jquery-1.7.1.min.js")
-	//script(type="text/javascript", src="/js/bootstrap.js")
+	script(type="text/javascript", src="/js/jquery-1.7.1.min.js")
+	script(type="text/javascript", src="/js/bootstrap.js")
+	script(type="text/javascript", src="/js/bootstrap-typeahead.js")
+	script(type="text/javascript", src="/js/underscore-min.js")
+	script(type="text/javascript")
+		$(function() {
+			$.get('/api/plants', function(result) { 
+
+				var plants = []
+
+				_.each(result.data, function(plant){ 
+					plants.push(plant.name);
+				});
+
+				$('input.search-query').typeahead({
+					items: 5,
+					source: plants
+				}).change(function() {
+					window.location = "/plants/" + this.value;
+				});
+
+			});
+		});

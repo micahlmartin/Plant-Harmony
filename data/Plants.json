@@ -1,31 +1,356 @@
 [
 	{
-		"type": "Vegetable",
 		"name": "Asparagus",
-		"companions": ["Tomatoe", "Aster", "Dill", "Corriander", "Parsley", "Basil", "Comfrey", "Marigold"],
-		"foes": ["Onion", "Garlic", "Potatoe"],
+		"type": "Vegetable",
+		"companions": ["Tomato", "Aster", "Dill", "Coriander", "Parsley", "Basil", "Comfrey", "Marigold"],
+		"foes": ["Onion", "Garlic", "Potato"],
 		"perennial": true,
-		"description": "",
-		"image": "asparagus.jpg"
+		"description": "Asparagus is a spring vegetable and a flowering perennial plant. Asparagus is native to most of Europe, northern Africa and western Asia, and is widely cultivated as a vegetable crop.",
 	},
 
 	{
+		"name": "Basil",
+		"type": "Herb",
+		"companions": ["Tomato", "Peppers", "Oregano", "Asparagus", "Petnunia", "Chamomile", "Anise"],
+		"foes": ["rue"]
+	},
+
+	{
+		"name": "Beet",
 		"type": "Vegetable",
-		"name": "Bean",
+		"companions": ["Lettuce", "Kohlrabi", "Onion", "@Brassica", "Catnip", "Garlic", "Mint"],
+		"foes": ["Green Bean"],
+		"perennial": false,
+		"description": "",
+	},
+
+	{
+		"name": "Borage",
+		"type": "Herb",
+		"companions": ["$Almost all plants", "Strawberry", "@Cucurbitaceae", "Tomato", "Cabbage"],
+		"foes": [],
+		"description": "Borage is the magic bullet of companion plants."
+	},
+
+	{
+		"name": "Broccoli",
+		"type": "Vegetable",
+		"companions": ["Geranium", "Dill", "@Allium", "Rosemary", "Water Cress", "Borage"],
+		"foes": ["Mustard", "Tomato", "Peppers"],
+		"perennial": false,
+		"description": "",	
+	},
+
+	{
+		"name": "Cabbage",
+		"type": "Vegetable",
+		"companions": ["Geranium", "Dill", "@Allium", "Rosemary"],
+		"foes": ["Mustard", "Tomato", "Peppers", "Strawberry", "Green Bean"],
+		"perennial": false,
+		"description": "",
+	},
+
+	{
+		"name": "Caraway",
+		"type": "Herb",
+		"companions": ["Strawberry"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Carrot",
+		"type": "Vegetable",
+		"companions": ["Tomato", "@Allium", "Rosemary", "Wormwood", "Sage", "Green Bean", "Flax"],
+		"foes": ["Dill", "Parsnip", "Radish"],
+		"description": ""
+	},
+
+	{
+		"name": "Celery",
+		"type": "Vegetable",
+		"companions": ["Cosmos", "Daisy", "SnapDragon"],
+		"foes": ["Corn", "Aster"],
+		"description": ""
+	},
+
+	{
+		"name": "Chamomile",
+		"type": "Herb",
+		"companions": ["Basil", "Wheat", "Onion", "Cabbage", "Cucumber"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Chervil",
+		"type": "Herb",
+		"companions": ["Radish", "Lettuce", "Broccoli"],
+		"foes": ["Radish"],
+		"perennial": true,	
+		"description": ""
+	},
+
+	{
+		"name": "Chive",
+		"type": "Herb",
+		"companions": ["Apple", "Carrot", "Tomato", "@Brassica"],
+		"foes": ["@Legume"],
+		"description": ""
+	},
+
+	{
+		"name": "Cilantro",
+		"type": "Herb",
+		"companions": ["Spinach", "@Legume"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Coriander",
+		"type": "Herb",
+		"companions": ["Spinach", "@Legume"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Corn",
+		"type": "Vegetable",
+		"companions": ["@Legume", "Sunflower", "@Legume", "Peanut", "@Cucurbitaceae", "Amaranth", "Geranium", "Morning Glory", "Parsley", "Potato"],
+		"foes": ["Tomato", "Celery"],
+		"description": ""
+	},
+
+	{
+		"name": "Cucumber",
+		"type": "Vegetable",
+		"companions": ["Water Cress", "Radish", "Marigold", "Sunflower", "Pea", "Beet", "Carrot", "Dill"],
+		"foes": ["Tomato", "Sage"],
+		"description": ""
+	},
+
+	{
+		"name": "Dill",
+		"type": "Herb",
+		"companions": ["Cabbage", "Corn", "Lettuce", "Onion", "Cucumber"],
+		"foes": ["Carrot", "Tomato"],
+		"description": ""
+	},
+
+	{
+		"name": "Eggplant",
+		"type": "Vegetable",
+		"companions": ["Green Bean", "Peppers", "Marigold", "Tarragon", "Mint"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Fennel",
+		"type": "Herb",
+		"companions": ["Dill"],
+		"foes": ["$Almost all plants"],
+		"description": "Fennel is allelopathic to most garden plants, inhibiting growth, causing to bolt, or actually killing many plants"
+	},
+
+	{
+		"name": "Garlic",
+		"type": "Herb",
+		"companions": ["Apple", "Pear", "Rose", "Cucumber", "Lettuce", "Celery"],
+		"foes": ["@Legume", "Cabbage"],
+		"description": ""
+	},
+
+	{
+		"name": "Green Bean",
+		"type": "Vegetable",
 		"companions": ["Corn", "Spinach", "Lettuce", "Rosemary", "Summer Savory", "Dill", "Carrot", "@Brassica", "Beet", "Radish", "Strawberry", "Cucumber", "Eggplant"],
-		"foes": ["Tomatoe", "Hot Pepper", "@Allium", "@Brassica"],
+		"foes": ["Tomato", "Peppers", "@Allium", "@Brassica"],
 		"annual": false,
 		"description": "",
-		"image": "bean.jpg"
 	},
 
 	{
-		"type": "Vegetable",
+		"name": "Hemp",
+		"type": "Herb",
+		"companions": ["@Brassica"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Hyssop",
+		"type": "Herb",
+		"companions": ["Cabbage", "Grape"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
 		"name": "Leek",
+		"type": "Vegetable",
 		"companions": ["Celery", "Apple", "Carrot"],
-		"foes": ["Bean", "Pea", "Swiss Chard"],
+		"foes": ["@Legume", "Swiss Chard"],
 		"annual": false,
 		"description": "",
-		"image": ""	
+	},
+
+	{
+		"name": "Lovage",
+		"type": "Herb",
+		"companions": ["$Almost all plants", "Green Bean"],
+		"foes": [],
+		"description": "Is thought to improve the health of almost all plants, like borage and geraniums, is considered a &quot;magic bullet&quot; of companion planting"
+	},
+
+	{
+		"name": "Lettuce",
+		"type": "Vegetable",
+		"companions": ["Radish", "Kohlrabi", "Green Bean", "Carrot"],
+		"foes": ["Celery", "Cabbage", "Water Cress", "Parsley"],
+		"description": ""
+	},
+
+	{
+		"name": "Mustard",
+		"type": "Vegetable",
+		"companions": ["Cabbage", "Cauliflower", "Radish", "Brussel Sprout", "Turnip"],
+		"foes": []
+	},
+
+	{
+		"name": "Onion",
+		"type": "Vegetable",
+		"companions": ["Tomato", "@Brassica", "Carrot"],
+		"foes": ["@Legume", "Parsley"]
+	},
+
+	{
+		"name": "Oregano",
+		"type": "Herb",
+		"companions": ["Tomato", "Peppers", "Basil"],
+		"foes": [],
+		"description": "Provides ground cover and much-needed humidity for pepper plants if allowed to spread among them"
+	},
+
+	{
+		"name": "Peppermint",
+		"type": "Herb",
+		"companions": ["@Brassica"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Peppers",
+		"type": "Vegetable",
+		"companions": ["Marjoram", "Tomato", "Geranium", "Petunia"],
+		"foes": ["Tomato", "Green Bean", "@Brassica"]
+	},
+
+	{
+		"name": "Potato",
+		"type": "Vegetable",
+		"companions": ["Horseradish"],
+		"foes": ["Carrot", "Cucumber", "Onion", "Raspberry", "Squash", "Sunflower", "Tomato"],
+		"description": ""
+	},
+
+	{
+		"name": "Parsnip",
+		"type": "Vegetable",
+		"companions": ["Fruit Trees"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Pumpkin",
+		"type": "Vegetable",
+		"companions": ["Corn", "Green Bean", "Buckwheat", "Catnip", "Tansy", "Radish"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Rosemary",
+		"type": "Herb",
+		"companions": ["Sage", "Cabbage", "Green Bean", "Carrot"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Sage",
+		"type": "Herb",
+		"companions": ["Rosemary", "Cabbage", "Bean", "Carrot"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Southernwood",
+		"type": "Herb",
+		"companions": ["Fruit Trees"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Spearmint",
+		"type": "Herb",
+		"companions": [],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Spinach",
+		"type": "Vegetable",
+		"companions": ["@Legume"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Summer Savory",
+		"type": "Herb",
+		"companions": ["Green Bean", "Onion"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Tansy",
+		"type": "Herb",
+		"companions": ["Green Bean", "@Cucurbitaceae"],
+		"foes": [],
+		"description": "Is reputed to generally repel insects (except for nectar-eating types). This herb should not be consumed, as it is quite toxic."
+	},
+
+	{
+		"name": "Tarragon",
+		"type": "Herb",
+		"companions": ["$Almost all plants", "Eggplant"],
+		"foes": [],
+		"description": "Its scent is disliked by most pests, and this plant is also thought to have Nurse Plant properties, enhancing the growth and flavor of crops grown with it."
+	},
+
+	{
+		"name": "Thyme",
+		"type": "Herb",
+		"companions": ["Cabbage", "Broccoli"],
+		"foes": [],
+		"description": ""
+	},
+
+	{
+		"name": "Tomato",
+		"type": "Vegetable",
+		"companions": ["Rose", "Peppers", "Asparagus", "Basil", "Oregano", "Parsley", "Carrot", "Marigold", "@Allium", "Celery", "Geranium", "Petunia", "Water Cress", "Borage"],
+		"foes": ["Black Walnut", "Corn", "Fennel", "Pea", "Dill", "Potato", "Beet", "@Brassica", "Rosemary"],
+		"description": ""
 	}
 ]

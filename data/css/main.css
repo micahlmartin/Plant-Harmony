@@ -17,12 +17,15 @@
   vertical-align: middle;
   display: inline-block;
   margin-right: 20px;
+  height: 100px;
+  width: 100px;
 }
 .plant-item div {
   margin-top: 13px;
 }
 .details img {
-  height: 150px;
+  height: 200px;
+  width: 200px;
   margin-bottom: 15px;
 }
 .details .subtitle {
