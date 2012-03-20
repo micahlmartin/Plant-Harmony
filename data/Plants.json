@@ -5,14 +5,32 @@
 		"companions": ["Tomato", "Aster", "Dill", "Coriander", "Parsley", "Basil", "Comfrey", "Marigold"],
 		"foes": ["Onion", "Garlic", "Potato"],
 		"perennial": true,
-		"description": "Asparagus is a spring vegetable and a flowering perennial plant. Asparagus is native to most of Europe, northern Africa and western Asia, and is widely cultivated as a vegetable crop.",
+		"description": "Asparagus is a spring vegetable and a flowering perennial plant. Asparagus is native to most of Europe, northern Africa and western Asia, and is widely cultivated as a vegetable crop."
+	},
+
+	{
+		"name": "Anise",
+		"type": "Herb",
+		"companions": ["Coriander", "Cilantro"],
+		"foes": [],
+		"description": "Grown for its licorice flavor and attracts predetory wasps that prey on aphids. Helps protect Brassicas from pests and invigorates anything growing near it."
+	},
+
+	{
+		"name": "Aster",
+		"type": "Flower",
+		"companions": ["Asparagus", "Celery"],
+		"foes": ["Carrot"],
+		"perennial": false,	
+		"description": "Asters are a rich source of nectar, and because they flower at the height of monarch butterfly migration season, they are a frequent way station for these insects. The flowers are also bee magnets, so individuals with bee sensitivities should plant asters away from the garden path."
 	},
 
 	{
 		"name": "Basil",
 		"type": "Herb",
-		"companions": ["Tomato", "Peppers", "Oregano", "Asparagus", "Petnunia", "Chamomile", "Anise"],
-		"foes": ["rue"]
+		"companions": ["Tomato", "Chili Pepper", "Bell Pepper", "Oregano", "Asparagus", "Petnunia", "Chamomile", "Anise", "Asparagus"],
+		"foes": ["Rue", "Sage"],
+		"description": "<p>Basil, originally from India[1], is best known as a culinary herb prominently featured in Italian cuisine, and also plays a major role in the Northeast Asian cuisine of Taiwan and the Southeast Asian cuisines of Thailand, Vietnam, Cambodia, and Laos. Depending on the species and cultivar, the leaves may taste somewhat like anise, with a strong, pungent, often sweet smell.</p><p>Basil is a great addition to tomatoes as it improves both growth and flavor. Helps repel flies and mosquitos.</p>"
 	},
 
 	{
@@ -21,8 +39,16 @@
 		"companions": ["Lettuce", "Kohlrabi", "Onion", "@Brassica", "Catnip", "Garlic", "Mint"],
 		"foes": ["Green Bean"],
 		"perennial": false,
-		"description": "",
+		"description": ""
 	},
+
+	{
+		"name": "Bell Pepper",
+		"type": "Vegetable",
+		"companions": ["Marjoram", "Tomato", "Geranium", "Petunia", "Parsley", "Basil", "Lovage", "Petunia", "Carrot", "Onion", "Okra"],
+		"foes": ["Green Bean", "@Brassica", "Fennel", "Kohlrabi"],
+		"description": "Peppers help protect okra from the wind. They can be harvested at any time but they wont develop their full flavor until maturity."
+	},	
 
 	{
 		"name": "Borage",
@@ -35,10 +61,10 @@
 	{
 		"name": "Broccoli",
 		"type": "Vegetable",
-		"companions": ["Geranium", "Dill", "@Allium", "Rosemary", "Water Cress", "Borage"],
+		"companions": ["Geranium", "Dill", "@Allium", "Rosemary", "Watercress", "Borage"],
 		"foes": ["Mustard", "Tomato", "Peppers"],
 		"perennial": false,
-		"description": "",	
+		"description": ""
 	},
 
 	{
@@ -47,7 +73,7 @@
 		"companions": ["Geranium", "Dill", "@Allium", "Rosemary"],
 		"foes": ["Mustard", "Tomato", "Peppers", "Strawberry", "Green Bean"],
 		"perennial": false,
-		"description": "",
+		"description": ""
 	},
 
 	{
@@ -62,7 +88,7 @@
 		"name": "Carrot",
 		"type": "Vegetable",
 		"companions": ["Tomato", "@Allium", "Rosemary", "Wormwood", "Sage", "Green Bean", "Flax"],
-		"foes": ["Dill", "Parsnip", "Radish"],
+		"foes": ["Dill", "Parsnip", "Radish", "Aster"],
 		"description": ""
 	},
 
@@ -92,6 +118,14 @@
 	},
 
 	{
+		"name": "Chili Pepper",
+		"type": "Vegetable",
+		"companions": ["Basil", "Rosemary", "Oregano", "Parsley", "Marjoram", "Tomato", "Geranium", "Petunia", "Bell Pepper", "Cucumber", "Eggplant", "Escarole", "Okra", "Swiss Chard", "Squash"],
+		"foes": ["@Legume", "@Brassica", "Fennel"],
+		"description": "Chili peppers should be grown close together as it helps protect them from drying out in the sun and providing more humidity. Teas made from the peppers make excellent insect sprays."
+	},
+
+	{
 		"name": "Chive",
 		"type": "Herb",
 		"companions": ["Apple", "Carrot", "Tomato", "@Brassica"],
@@ -110,7 +144,7 @@
 	{
 		"name": "Comfrey",
 		"type": "Herb",
-		"companions": ["Spinach", "Swiss Chard", "Tomato", "Peppers", "Potato"],
+		"companions": ["Spinach", "Swiss Chard", "Tomato", "Chili Pepper", "Bell Pepper", "Potato"],
 		"foes": [],
 		"description": "Companion planting comfrey with Spinach and Swiss Chard will increase their leaf growth. This beautiful flowering plant makes an excellent companion to nealy all plants but makes and even better fertilizer. Make a tea with the leaves and use apply it to tomato and pepper plants after they started to flower."
 	},
@@ -150,7 +184,7 @@
 	{
 		"name": "Eggplant",
 		"type": "Vegetable",
-		"companions": ["Green Bean", "Peppers", "Marigold", "Tarragon", "Mint"],
+		"companions": ["Green Bean", "Chili Pepper", "Bell Pepper", "Marigold", "Tarragon", "Mint"],
 		"foes": [],
 		"description": ""
 	},
@@ -175,9 +209,9 @@
 		"name": "Green Bean",
 		"type": "Vegetable",
 		"companions": ["Corn", "Spinach", "Lettuce", "Rosemary", "Summer Savory", "Dill", "Carrot", "@Brassica", "Beet", "Radish", "Strawberry", "Cucumber", "Eggplant"],
-		"foes": ["Tomato", "Peppers", "@Allium", "@Brassica"],
+		"foes": ["Tomato", "Chili Pepper", "Bell Pepper", "@Allium", "@Brassica"],
 		"annual": false,
-		"description": "",
+		"description": ""
 	},
 
 	{
@@ -202,7 +236,7 @@
 		"companions": ["Celery", "Apple", "Carrot"],
 		"foes": ["@Legume", "Swiss Chard"],
 		"annual": false,
-		"description": "",
+		"description": ""
 	},
 
 	{
@@ -246,7 +280,7 @@
 	{
 		"name": "Oregano",
 		"type": "Herb",
-		"companions": ["Tomato", "Peppers", "Basil"],
+		"companions": ["Tomato", "Chili Pepper", "Bell Pepper", "Basil"],
 		"foes": [],
 		"description": "Provides ground cover and much-needed humidity for pepper plants if allowed to spread among them"
 	},
@@ -257,13 +291,6 @@
 		"companions": ["@Brassica"],
 		"foes": [],
 		"description": ""
-	},
-
-	{
-		"name": "Peppers",
-		"type": "Vegetable",
-		"companions": ["Marjoram", "Tomato", "Geranium", "Petunia"],
-		"foes": ["Tomato", "Green Bean", "@Brassica"]
 	},
 
 	{
@@ -368,5 +395,13 @@
 		"companions": ["Rose", "Peppers", "Asparagus", "Basil", "Oregano", "Parsley", "Carrot", "Marigold", "@Allium", "Celery", "Geranium", "Petunia", "Water Cress", "Borage"],
 		"foes": ["Black Walnut", "Corn", "Fennel", "Pea", "Dill", "Potato", "Beet", "@Brassica", "Rosemary"],
 		"description": ""
+	},
+
+	{
+		"name": "Watercress",
+		"type": "Vegetable",
+		"companions": ["Onion", "Chive", "Peppermint", "Spearmint", "Wintergreen"],
+		"foes": [],
+		"description": "Grow Watercress in a semi shaded area. Will grow directly in gently running water. "
 	}
 ]

@@ -17,8 +17,9 @@
     if (plantList != null) {
       for (_i = 0, _len = plantList.length; _i < _len; _i++) {
         plant = plantList[_i];
+        console.log(plant);
         if (plant.match(/@.+/)) {
-          expandedList = expandedList.concat(genusList[plant.substring(1)].plants);
+          expandedList = expandedList.concat(genusList[plant.substring(1)]);
         } else {
           expandedList.push(plant);
         }
@@ -64,19 +65,20 @@
   });
 
   mongo.openDB(function(db) {
-    return db.dropDatabase(function(err, success) {
-      console.log("Dropped database");
-      return db.collection('plants', function(err, collection) {
-        console.log("Recreating plant collection");
-        return collection.insert(plantArray, function(err, docs) {
-          return collection.count(function(err, count) {
-            db.close();
-            if (count === plantArray.length) {
-              return console.log("Inserted " + count + " plants");
-            } else {
-              throw "Insert failed. Expected " + plantArray.length + " but was " + count;
-            }
-          });
+    /*
+    	db.dropDatabase (err, success) ->
+    		console.log "Dropped database"
+    */    return db.collection('plants', function(err, collection) {
+      console.log("Recreating plant collection");
+      return collection.insert(plantArray, function(err, docs) {
+        console.log("Inserted plants");
+        return collection.count(function(err, count) {
+          db.close();
+          if (count === plantArray.length) {
+            return console.log("Inserted " + count + " plants");
+          } else {
+            throw "Insert failed. Expected " + plantArray.length + " but was " + count;
+          }
         });
       });
     });

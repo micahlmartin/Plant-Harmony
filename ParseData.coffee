@@ -8,8 +8,9 @@ getExpandedPlants = (plantList) ->
 	expandedList = [];
 	if plantList?
 		for plant in plantList	
+			console.log plant
 			if plant.match /@.+/
-				expandedList = expandedList.concat genusList[plant.substring 1].plants
+				expandedList =  expandedList.concat genusList[plant.substring 1]
 			else
 				expandedList.push plant	
 	
@@ -49,7 +50,9 @@ mongo.openDB (db) ->
 
 		db.collection 'plants', (err, collection) ->
 			console.log "Recreating plant collection"
+			
 			collection.insert plantArray, (err, docs) ->
+				console.log "Inserted plants"
 				collection.count (err, count) ->
 					db.close() 
 					if count == plantArray.length
