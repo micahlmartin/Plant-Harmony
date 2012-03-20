@@ -9,11 +9,13 @@
 	},
 	"keywords": ["example"],
 	"dependencies": {
-		"coffee-script": "*",
 		"express": "*",
-		"less": "*",
 		"mongodb": "*",
 		"jade": "*",
 		"underscore": "*"
+	},
+	"devDependencies": {
+		"coffee-script": "*",
+		"less": "*"
 	}
 }

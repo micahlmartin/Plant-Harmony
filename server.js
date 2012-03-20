@@ -17,6 +17,10 @@
 
   server.set('views', __dirname + '/views');
 
+  server.set('view options', {
+    layout: false
+  });
+
   server.use(express.static(__dirname + '/data'));
 
   server.use(express.logger());
@@ -30,8 +34,7 @@
   server.get('/', function(req, res) {
     return repository.getAll(1, 10, function(err, results) {
       return res.render('index', {
-        plants: results,
-        layout: false
+        plants: results
       });
     });
   });
@@ -39,8 +42,7 @@
   server.get('/plants/:name', function(req, res) {
     return repository.getByName(req.params.name, function(err, result) {
       return res.render('plant', {
-        plant: result,
-        layout: false
+        plant: result
       });
     });
   });

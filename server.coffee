@@ -10,6 +10,7 @@ Setup sever
 server = express.createServer()
 server.set 'view engine', 'jade'
 server.set 'views', __dirname + '/views'
+server.set 'view options', { layout: false}
 server.use express.static(__dirname + '/data')
 server.use express.logger()
 server.use express.bodyParser()
@@ -21,11 +22,11 @@ Define Routes
 
 server.get '/', (req, res) ->
 	repository.getAll 1, 10, (err, results) ->
-		res.render 'index', plants: results, layout: false
+		res.render 'index', plants: results
 
 server.get '/plants/:name', (req, res) ->
 	repository.getByName req.params.name, (err, result) ->
-		res.render 'plant', plant: result, layout: false
+		res.render 'plant', plant: result
 
 server.get '/api/plants/types/:type', (req, res) ->
 	repository.getByType req.params.type, (err, results) ->

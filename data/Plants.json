@@ -108,6 +108,14 @@
 	},
 
 	{
+		"name": "Comfrey",
+		"type": "Herb",
+		"companions": ["Spinach", "Swiss Chard", "Tomato", "Peppers", "Potato"],
+		"foes": [],
+		"description": "Companion planting comfrey with Spinach and Swiss Chard will increase their leaf growth. This beautiful flowering plant makes an excellent companion to nealy all plants but makes and even better fertilizer. Make a tea with the leaves and use apply it to tomato and pepper plants after they started to flower."
+	},
+
+	{
 		"name": "Coriander",
 		"type": "Herb",
 		"companions": ["Spinach", "@Legume"],
@@ -211,6 +219,14 @@
 		"companions": ["Radish", "Kohlrabi", "Green Bean", "Carrot"],
 		"foes": ["Celery", "Cabbage", "Water Cress", "Parsley"],
 		"description": ""
+	},
+
+	{
+		"name": "Marigold",
+		"type": "Flower",
+		"companions": ["$Nearly all plants"],
+		"foes": [],
+		"description": "Marigolds are credited with repelling a large variety of pests. Plant freely throughout the garden."
 	},
 
 	{
