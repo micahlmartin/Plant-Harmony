@@ -62,7 +62,7 @@
 		"name": "Broccoli",
 		"type": "Vegetable",
 		"companions": ["Geranium", "Dill", "@Allium", "Rosemary", "Watercress", "Borage"],
-		"foes": ["Mustard", "Tomato", "Peppers"],
+		"foes": ["Mustard", "Tomato", "Chili Pepper", "Bell Pepper"],
 		"perennial": false,
 		"description": ""
 	},
