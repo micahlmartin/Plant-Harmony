@@ -30,7 +30,7 @@
 		"type": "Herb",
 		"companions": ["Tomato", "Chili Pepper", "Bell Pepper", "Oregano", "Asparagus", "Petnunia", "Chamomile", "Anise", "Asparagus"],
 		"foes": ["Rue", "Sage"],
-		"description": "<p>Basil, originally from India[1], is best known as a culinary herb prominently featured in Italian cuisine, and also plays a major role in the Northeast Asian cuisine of Taiwan and the Southeast Asian cuisines of Thailand, Vietnam, Cambodia, and Laos. Depending on the species and cultivar, the leaves may taste somewhat like anise, with a strong, pungent, often sweet smell.</p><p>Basil is a great addition to tomatoes as it improves both growth and flavor. Helps repel flies and mosquitos.</p>"
+		"description": "<p>Basil, originally from India, is best known as a culinary herb prominently featured in Italian cuisine, and also plays a major role in the Northeast Asian cuisine of Taiwan and the Southeast Asian cuisines of Thailand, Vietnam, Cambodia, and Laos. Depending on the species and cultivar, the leaves may taste somewhat like anise, with a strong, pungent, often sweet smell.</p><p>Basil is a great addition to tomatoes as it improves both growth and flavor. Helps repel flies and mosquitos.</p>"
 	},
 
 	{
@@ -39,7 +39,7 @@
 		"companions": ["Lettuce", "Kohlrabi", "Onion", "@Brassica", "Catnip", "Garlic", "Mint"],
 		"foes": ["Green Bean"],
 		"perennial": false,
-		"description": ""
+		"description": "The beet is a plant best known for its purple root known as the beetroot or garden beet. They're great for adding minerals to the soil. The leaves are made up of about 25% magnesium and will make an excellent addition to your compost pile. Kohlrabi makes an excellent companion. Garlic will help imporve its flavor."
 	},
 
 	{
@@ -55,13 +55,13 @@
 		"type": "Herb",
 		"companions": ["$Almost all plants", "Strawberry", "@Cucurbitaceae", "Tomato", "Cabbage"],
 		"foes": [],
-		"description": "Borage is the magic bullet of companion plants."
+		"description": "Borage is the magic bullet of companion plants. It deters tomato hornworms and cabbage worms. It will attract bees and predetory wasps. Helps replenish minerals in the soil and makes a great addition to the compost pile."
 	},
 
 	{
 		"name": "Broccoli",
 		"type": "Vegetable",
-		"companions": ["Geranium", "Dill", "@Allium", "Rosemary", "Watercress", "Borage"],
+		"companions": ["Geranium", "Dill", "@Allium", "Rosemary", "Watercress", "Borage", "Basil", "Green Beans", "Cucumber", "Hyssop", "Lettuce", "Marigold", "Mint", "Potato", "Radish", "Rosemary", "Sage", "Thyme", "Tomato"],
 		"foes": ["Mustard", "Tomato", "Chili Pepper", "Bell Pepper"],
 		"perennial": false,
 		"description": ""
@@ -168,7 +168,7 @@
 	{
 		"name": "Cucumber",
 		"type": "Vegetable",
-		"companions": ["Water Cress", "Radish", "Marigold", "Sunflower", "Pea", "Beet", "Carrot", "Dill"],
+		"companions": ["Watercress", "Radish", "Marigold", "Sunflower", "Pea", "Beet", "Carrot", "Dill"],
 		"foes": ["Tomato", "Sage"],
 		"description": ""
 	},
@@ -251,7 +251,7 @@
 		"name": "Lettuce",
 		"type": "Vegetable",
 		"companions": ["Radish", "Kohlrabi", "Green Bean", "Carrot"],
-		"foes": ["Celery", "Cabbage", "Water Cress", "Parsley"],
+		"foes": ["Celery", "Cabbage", "Watercress", "Parsley"],
 		"description": ""
 	},
 
@@ -392,7 +392,7 @@
 	{
 		"name": "Tomato",
 		"type": "Vegetable",
-		"companions": ["Rose", "Bell Pepper", "Chili Pepper", "Asparagus", "Basil", "Oregano", "Parsley", "Carrot", "Marigold", "@Allium", "Celery", "Geranium", "Petunia", "Water Cress", "Borage"],
+		"companions": ["Rose", "Bell Pepper", "Chili Pepper", "Asparagus", "Basil", "Oregano", "Parsley", "Carrot", "Marigold", "@Allium", "Celery", "Geranium", "Petunia", "Watercress", "Borage"],
 		"foes": ["Black Walnut", "Corn", "Fennel", "Pea", "Dill", "Potato", "Beet", "@Brassica", "Rosemary"],
 		"description": ""
 	},

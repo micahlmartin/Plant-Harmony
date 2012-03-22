@@ -12,7 +12,7 @@ block content
 				h2 #{plant.name}
 				p.subtitle #{plant.type}
 				
-				p #{plant.description}
+				p!=plant.description
 				
 				h3 Companions
 				if plant.companions && plant.companions.length > 0
