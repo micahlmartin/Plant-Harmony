@@ -71,7 +71,7 @@
 		"name": "Cabbage",
 		"type": "Vegetable",
 		"companions": ["Geranium", "Dill", "@Allium", "Rosemary"],
-		"foes": ["Mustard", "Tomato", "Peppers", "Strawberry", "Green Bean"],
+		"foes": ["Mustard", "Tomato", "Chili Pep", "Strawberry", "Green Bean"],
 		"perennial": false,
 		"description": ""
 	},
@@ -392,7 +392,7 @@
 	{
 		"name": "Tomato",
 		"type": "Vegetable",
-		"companions": ["Rose", "Peppers", "Asparagus", "Basil", "Oregano", "Parsley", "Carrot", "Marigold", "@Allium", "Celery", "Geranium", "Petunia", "Water Cress", "Borage"],
+		"companions": ["Rose", "Bell Pepper", "Chili Pepper", "Asparagus", "Basil", "Oregano", "Parsley", "Carrot", "Marigold", "@Allium", "Celery", "Geranium", "Petunia", "Water Cress", "Borage"],
 		"foes": ["Black Walnut", "Corn", "Fennel", "Pea", "Dill", "Potato", "Beet", "@Brassica", "Rosemary"],
 		"description": ""
 	},
