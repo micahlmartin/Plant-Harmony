@@ -64,24 +64,24 @@
 		"companions": ["Geranium", "Dill", "@Allium", "Rosemary", "Watercress", "Borage", "Basil", "Green Beans", "Cucumber", "Hyssop", "Lettuce", "Marigold", "Mint", "Potato", "Radish", "Rosemary", "Sage", "Thyme", "Tomato", "Celelry"],
 		"foes": ["Mustard", "Chili Pepper", "Bell Pepper", "Grape", "Rue", "Strawberry"],
 		"perennial": false,
-		"description": "Broccoli is a plant in the cabbage family whose large flower head is used as a vegetable. Most varities will sprout many delicious side shoots after the main head is harvested. Its flavor is improved when planted near celery, potatoes, or onions. Dill and rosemary will help repel pests. It neads calcium to grow so pairing it with plants like watercress and beets is good since they require very little"
+		"description": "Broccoli is a plant in the cabbage family whose large flower head is used as a vegetable. Most varities will sprout many delicious side shoots after the main head is harvested. Its flavor is improved when planted near celery, potatoes, or onions. Dill and rosemary will help repel pests. It neads calcium to grow so pairing it with plants like watercress and beets is good since they require very little."
 	},
 
 	{
 		"name": "Cabbage",
 		"type": "Vegetable",
 		"companions": ["Geranium", "Dill", "@Allium", "Rosemary", "Celery", "Potato"],
-		"foes": ["Mustard", "Tomato", "Chili Pep", "Strawberry", "Green Bean"],
+		"foes": ["Mustard", "Tomato", "Chili Pepper", "Bell Pepper", "Strawberry", "Green Bean", "Eggplant", "Rue", "Lettuce"],
 		"perennial": false,
-		"description": "Cabbage is a widely cultivated green leafy vegetable used in a variety of dishes for its naturally spicy flavor."
+		"description": "Cabbage is a widely cultivated green leafy vegetable used in a variety of dishes for its naturally spicy flavor. Celery and chamomile both help improve growth and flavor."
 	},
 
 	{
 		"name": "Caraway",
 		"type": "Herb",
 		"companions": ["Strawberry"],
-		"foes": [],
-		"description": ""
+		"foes": ["Fennel", "Dill"],
+		"description": "Caraway, usualy used whole, has a pingent, asise-like flavor and aroma. It is used as a spice in breads, especially rye bread, as well as many desserts, liquors, casseroles, curry, and many popular European cuisine. It is great for loosening compacted soil with its deep roots and can be planted next to shallow rooted crops. Its flowers attract qiute a few beneficial insects. It can be rather challenging to get it established."
 	},
 
 	{
