@@ -89,7 +89,7 @@
 		"type": "Vegetable",
 		"companions": ["Tomato", "@Allium", "Rosemary", "Wormwood", "Sage", "Green Bean", "Flax"],
 		"foes": ["Dill", "Parsnip", "Radish", "Aster"],
-		"description": ""
+		"description": "Carrots grow well with lettuce, tomatoes, and onions."
 	},
 
 	{
@@ -97,7 +97,7 @@
 		"type": "Vegetable",
 		"companions": ["Cosmos", "Daisy", "SnapDragon"],
 		"foes": ["Corn", "Aster"],
-		"description": ""
+		"description": "Celery can be a tough vegetable grow. It can take up to 5 months to harvest and does not like hot climates."
 	},
 
 	{
@@ -105,7 +105,7 @@
 		"type": "Herb",
 		"companions": ["Basil", "Wheat", "Onion", "Cabbage", "Cucumber"],
 		"foes": [],
-		"description": ""
+		"description": "Chamomile is one of the few seeds that need light to germinate and is considered an excellent companion to nearly anything grown in the garden. It is best when it's planted outdoors in August by spreading the seed and mixing it very lightly with soil. Improves the flavor of cabbage, cucumber, and onions. Helps accumulate calcium, potassium, and sulfur in the soil. If you leave some of the flowers unpicked it will reseed itself."
 	},
 
 	{
@@ -114,7 +114,7 @@
 		"companions": ["Radish", "Lettuce", "Broccoli"],
 		"foes": ["Radish"],
 		"perennial": true,	
-		"description": ""
+		"description": "Chervil is a delicate annual herb related to parsley. It is used to season mild-flavoured dishes and is a constituent of the French herb mixture fines herbes."
 	},
 
 	{

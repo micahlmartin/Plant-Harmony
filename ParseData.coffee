@@ -31,8 +31,10 @@ for plant in plantData
 	plantList[plant.name] = plant
 
 _.each plantList, (plant) ->
-	plant.companions = getExpandedPlants(plant.companions)
-	plant.foes = getExpandedPlants(plant.foes)
+	plant.companions = _.sortBy getExpandedPlants(plant.companions), (p) ->
+		return p
+	plant.foes = _.sortBy getExpandedPlants(plant.foes), (p) ->
+		return p
 
 plantArray = []
 

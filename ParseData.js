@@ -47,8 +47,12 @@
   }
 
   _.each(plantList, function(plant) {
-    plant.companions = getExpandedPlants(plant.companions);
-    return plant.foes = getExpandedPlants(plant.foes);
+    plant.companions = _.sortBy(getExpandedPlants(plant.companions), function(p) {
+      return p;
+    });
+    return plant.foes = _.sortBy(getExpandedPlants(plant.foes), function(p) {
+      return p;
+    });
   });
 
   plantArray = [];
