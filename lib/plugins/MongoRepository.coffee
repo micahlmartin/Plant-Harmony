@@ -29,8 +29,11 @@ module.exports =
 	getAll: (pageNumber, pageCount, callback) ->
 		utils.log 'Returning all plants ' + pageNumber + ' ' + pageCount
 
+		pageNumber = Math.max pageNumber || 1
+		pageCount = Math.min pageCount || 10
+
 		getCollection 'plants', (err, coll, db) ->
-			coll.find().toArray (err, docs) ->
+			coll.find({},  "limit": pageCount, "skip": pageNumber * pageCount).toArray (err, docs) ->
 				db.close()
 				utils.log docs
 				callback err, docs
@@ -61,4 +64,4 @@ module.exports =
 				db.close()
 				utils.log docs
 				callback err, docs
-			
+				
