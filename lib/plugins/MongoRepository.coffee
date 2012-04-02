@@ -34,7 +34,7 @@ module.exports =
 		pageCount = Math.min pageCount || 10
 
 		getCollection 'plants', (err, coll, db) ->
-			coll.find({},  "limit": pageCount, "skip": pageNumber * pageCount).toArray (err, docs) ->
+			coll.find().toArray (err, docs) ->
 				db.close()
 				utils.log docs
 				callback err, docs
