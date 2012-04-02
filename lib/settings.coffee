@@ -2,7 +2,12 @@ mongodb = require 'mongodb'
 
 
 module.exports =
-		DBServer: '127.0.0.1',
+		mongo: 
+			"host": process.env["MONGO_HOST"]
+			"port": parseInt process.env["MONGO_PORT"]
+			"username": process.env["MONGO_USERNAME"]
+			"password": process.env["MONGO_PASSWORD"]
+			"db": process.env["MONGO_DB"]
 		Repository: 'MongoRepository',
 		LoggingEnabled: true,
-		WebServerPort: process.env.VMC_APP_PORT || 3010
+		WebServerPort: process.env.PORT || 3000

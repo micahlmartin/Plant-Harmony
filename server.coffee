@@ -1,6 +1,7 @@
 express = require 'express'
 settings = require './lib/settings'
 repository = require './lib/plugins/' + settings.Repository
+#parseData = require './parsedata'
 
 ###
 Setup sever
@@ -42,9 +43,14 @@ server.get '/api/plants/:name?', (req, res) ->
 		repository.getByName req.params.name, (err, results) ->
 			sendResponse err, results, res
 	else
-		repository.getAll 1, 10, (err, results) ->
+		repository.getAll 1, 100, (err, results) ->
 			sendResponse err, results, res
 
+###
+server.get '/api/admin/loaddata', (req, res) ->
+	parseData.execute()
+	sendResponse null, "Data loaded successfully!", res
+###
 
 sendResponse = (err, data, res) ->
 	if err?

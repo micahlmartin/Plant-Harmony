@@ -65,11 +65,17 @@
         return sendResponse(err, results, res);
       });
     } else {
-      return repository.getAll(1, 10, function(err, results) {
+      return repository.getAll(1, 100, function(err, results) {
         return sendResponse(err, results, res);
       });
     }
   });
+
+  /*
+  server.get '/api/admin/loaddata', (req, res) ->
+  	parseData.execute()
+  	sendResponse null, "Data loaded successfully!", res
+  */
 
   sendResponse = function(err, data, res) {
     if (err != null) {

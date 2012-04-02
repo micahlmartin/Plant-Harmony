@@ -7,7 +7,7 @@ block content
 				input.search-query(type="search", placeholder="Search")
 
 			div.details
-				img.thumbnail(src="/images/plants/#{plant.name}.jpg")
+				img.thumbnail(src="/images/plants/#{plant.name.toLowerCase()}.jpg")
 				
 				h2 #{plant.name}
 				p.subtitle #{plant.type}

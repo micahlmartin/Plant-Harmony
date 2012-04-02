@@ -7,6 +7,10 @@
 		"type": "git",
 		"url": "https://github.com/micahlmartin/Plant-Harmony"
 	},
+	"engines": {
+		"node": "0.6.10",
+		"npm": "1.1.x"
+	},
 	"keywords": ["example"],
 	"dependencies": {
 		"express": "*",
