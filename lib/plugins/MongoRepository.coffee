@@ -3,14 +3,16 @@ settings = require '../settings'
 utils = require '../utils'
 
 openDB = (callback) ->
-	mongoServer = new mongodb.Server settings.DBServer, mongodb.Connection.DEFAULT_PORT 
-	dbConnection = new mongodb.Db "plant_harmony", mongoServer
+	mongoServer = new mongodb.Server settings.mongo.host, settings.mongo.port 
+	dbConnection = new mongodb.Db settings.mongo.db, mongoServer
 	dbConnection.open (err, db) ->
 		if err
 			utils.log 'An error ocurred opening the database connection'
 			throw err
 
-		callback db
+		db.authenticate settings.mongo.username, settings.mongo.password, (err, result) ->
+			utils.log err
+			callback db
 
 getCollection = (name, callback) ->
 	openDB (db) ->
@@ -18,7 +20,6 @@ getCollection = (name, callback) ->
 			utils.log 'Loading collection ' + name 
 
 			callback err, coll, db
-
 
 module.exports = 
 
@@ -33,7 +34,7 @@ module.exports =
 		pageCount = Math.min pageCount || 10
 
 		getCollection 'plants', (err, coll, db) ->
-			coll.find({},  "limit": pageCount, "skip": pageNumber * pageCount).toArray (err, docs) ->
+			coll.find().toArray (err, docs) ->
 				db.close()
 				utils.log docs
 				callback err, docs

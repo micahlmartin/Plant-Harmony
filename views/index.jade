@@ -13,7 +13,7 @@ block content
 			each plant in plants
 				li.plant-item
 					a(href="/plants/#{plant.name}")
-						img.thumbnail(src="/images/plants/#{plant.name}.jpg", alt="#{plant.name}")
+						img.thumbnail(src="/images/plants/#{plant.name.toLowerCase()}.jpg", alt="#{plant.name}")
 						div
 							h3 #{plant.name}
 							p #{plant.type}
