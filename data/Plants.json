@@ -136,9 +136,9 @@
 	{
 		"name": "Cilantro",
 		"type": "Herb",
-		"companions": ["Spinach", "@Legume"],
+		"companions": ["Spinach", "@Legume", "Anise", "Caraway", "Potato", "Dill"],
 		"foes": [],
-		"description": ""
+		"description": "<p>Cilantro is a common annual herb used in popular dishes of many different cuisines. The leaves are referred to as Cilantro and the seeds are known as Corriander.</p><p>Anise will help cilantro with growth and cilantro will help anise seeds germinate more quickly. It will help repel harmful insects like aphids, spider mites, and the potato beetle. A tea made from its leaves can be used as a spray for spider mites.</p>"
 	},
 
 	{
