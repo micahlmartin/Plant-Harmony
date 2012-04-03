@@ -128,9 +128,9 @@
 	{
 		"name": "Chive",
 		"type": "Herb",
-		"companions": ["Apple", "Carrot", "Tomato", "@Brassica"],
+		"companions": ["Apple", "Carrot", "Tomato", "@Brassica", "Sunflower"],
 		"foes": ["@Legume"],
-		"description": ""
+		"description": "<p>Chives are the species of edible onions. This herb is commonly used as an ingredient for fish, potatoes, soups and many other dishes. They have excellent insect-repelling properties that can be used in gardens to control pests.</p><p>They will greatly improve the flavor of carrots and tomatoes when planted nearby. When made used as a tea and sprayed on the leaves of cucumbers, pumpkins and zucchini it will help prevent powdery mildews.</p>"
 	},
 
 	{

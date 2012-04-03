@@ -1,11 +1,13 @@
 (function() {
-  var NotFound, express, repository, sendResponse, server, settings;
+  var NotFound, express, parseData, repository, sendResponse, server, settings;
 
   express = require('express');
 
   settings = require('./lib/settings');
 
   repository = require('./lib/plugins/' + settings.Repository);
+
+  parseData = require('./ParseData');
 
   /*
   Setup sever
@@ -71,11 +73,10 @@
     }
   });
 
-  /*
-  server.get '/api/admin/loaddata', (req, res) ->
-  	parseData.execute()
-  	sendResponse null, "Data loaded successfully!", res
-  */
+  server.get('/api/admin/loaddata', function(req, res) {
+    parseData.execute();
+    return sendResponse(null, "Data loaded successfully!", res);
+  });
 
   sendResponse = function(err, data, res) {
     if (err != null) {
