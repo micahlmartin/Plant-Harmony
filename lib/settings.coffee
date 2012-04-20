@@ -8,6 +8,6 @@ module.exports =
 			"username": process.env["MONGO_USERNAME"] 
 			"password": process.env["MONGO_PASSWORD"]
 			"db": process.env["MONGO_DB"] || "plants"
-		Repository: process.env["MONGO_DB"] || 'MongoRepository',
-		LoggingEnabled: process.env["MONGO_DB"] || false,
+		Repository: process.env["REPOSITORY"] || 'MongoRepository',
+		LoggingEnabled: process.env["LOGGING_ENABLED"] || false,
 		WebServerPort: process.env.PORT || 3000
